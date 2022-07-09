@@ -10,7 +10,9 @@ module.exports = (Models) => {
       return res.sendStatus(200);
     },
     Read: async (_req, res) => {
-      const result = await Customers.findAll();
+      const result = await Customers.findAll()
+        .then()
+        .catch((err) => res.json({ error: err.error.parent }));
       return res.json(result);
     },
     Update: async (req, res) => {
@@ -37,7 +39,9 @@ module.exports = (Models) => {
     },
     Find: async (req, res) => {
       const { id } = req.params;
-      const result = await Customers.findByPk(id);
+      const result = await Customers.findByPk(id)
+        .then()
+        .catch((err) => res.json({ error: err.error.parent }));
       return res.json(result);
     },
   };
