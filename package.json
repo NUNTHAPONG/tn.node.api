@@ -1,0 +1,29 @@
+{
+  "name": "tn.node.api",
+  "version": "1.0.0",
+  "description": "Training For NodeJS API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NUNTHAPONG/tn.node.api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NUNTHAPONG/tn.node.api/issues"
+  },
+  "homepage": "https://github.com/NUNTHAPONG/tn.node.api#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.2"
+  }
+}
